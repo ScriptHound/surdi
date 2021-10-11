@@ -27,7 +27,5 @@ async def handler(message: Message) -> str:
                     delete_for_all=delete_for_all)
             except Exception as e:
                 print(e)
-                return "Не хватает прав, чтобы удалить"
-            return "Голосовое удалено"
 
 bot.run_forever()
